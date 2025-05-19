@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan-7</title>
+</head>
+    <style>
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .container {
+        border: 1px solid #333;
+        padding: 10px;
+        max-width: 1050px;
+        margin: auto;
+    }
+    </style>
+
+<body>
+    <div class="container">
+    <h2>Formulir Pendaftaran</h2>
+    <form action="proses_pendaftaran.php" method="POST">
+        <label for="npm">NPM :</label>
+        <input type="text" id="npm" name="npm" required><br><br>
+
+        <label for="fullname">Nama Lengkap :</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Kata Sandi :</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="place_birth">Tempat Lahir :</label>
+        <input type="text" id="place_birth" name="place_birth" required><br><br>
+
+        <label for="birthdate">Tanggal Lahir :</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label>Jenis Kelamin :</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Laki-laki</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Perempuan</label><br><br>
+
+        <label for="address">Alamat :</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit" name="save">Save</button>
+        <button type="reset" name="clear">Clear</button>
+    </form>
+    </div>
+</body>
+</html>
