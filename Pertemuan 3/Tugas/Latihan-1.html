@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan-1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f8;
+      padding: 40px;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004466;
+    }
+
+    .form-wrapper {
+      background: white;
+      padding: 25px 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 15px;
+      padding-top: 5px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:first-child {
+      background-color: #007acc;
+      color: white;
+    }
+
+    button:last-child {
+      background-color: #999;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Mahasiswa</h2>
+
+  <div class="form-wrapper">
+    <form name="fform">
+      <div class="form-group">
+        <label for="nim">NIM :</label>
+        <input type="text" name="nim" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nama">Nama :</label>
+        <input type="text" name="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label>Jenis Kelamin :</label>
+        <div class="radio-group">
+          <label><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki</label>
+          <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="agama">Agama :</label>
+        <select name="agama">
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Katolik">Katolik</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddha">Buddha</option>
+          <option value="Konghucu">Konghucu</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status :</label>
+        <input type="text" name="status" required>
+      </div>
+
+      <div class="form-group">
+        <label for="jurusan">Jurusan:</label>
+        <select name="jurusan">
+          <option value="Teknologi Informasi">Teknologi Informasi</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Pariwisata">Pariwisata</option>
+          <option value="Manajemen">Manajemen</option>
+          <option value="Vokasi">Vokasi</option>
+          <option value="Bio Kewirausahaan">Bio Kewirausahaan</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="komentar">Komentar :</label>
+        <textarea name="komentar" rows="3"></textarea>
+      </div>
+
+      <div class="button-group">
+        <button type="button" onclick="tampilkanData()">Kirim</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="Latihan1.js"></script>
+</body>
+</html>

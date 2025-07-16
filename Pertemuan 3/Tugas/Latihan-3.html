@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latihan-3</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f5f9;
+      padding: 40px;
+      color: #333;
+    }
+
+    .card {
+      max-width: 400px;
+      margin: auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #007acc;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    input[readonly] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn-group {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button[type="button"] {
+      background-color: #007acc;
+      color: white;
+    }
+
+    button[type="reset"] {
+      background-color: #999;
+      color: white;
+    }
+  </style>
+  <script src="Latihan3.js"></script>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Faktorial & Deret</h2>
+    <form name="fform">
+      <label for="n">Masukkan Nilai X :</label>
+      <input type="number" id="n" name="n" required>
+
+      <label for="faktorial">Hasil  :</label>
+      <input type="text" id="faktorial" name="faktorial" readonly>
+
+      <label for="jumlah">Jumlah Deret (1 + 2 + ... + X) :</label>
+      <input type="text" id="jumlah" name="jumlah" readonly>
+
+      <div class="btn-group">
+        <button type="button" onclick="hitung()">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
