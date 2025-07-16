@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+header {
+    background-color: #000000;
+    color: #A4D703;
+    border-bottom: 2px solid #7ED900;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #CCCCCC;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #A4D703;
+}
+
+#tentang {
+    text-align: center;
+}
+
+#tentang img.profil {
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+#tentang h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #A4D703;
+}
+
+#tentang p {
+    margin: 20px 0;
+    text-align: justify;
+    color: #CCCCCC;
+}
+
+#tentang h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #7ED900;
+}
+
+#proyek h2 {
+    color: #A4D703;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#proyek .proyek {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+#proyek .proyek img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+#proyek .deskripsi h3 {
+    font-size: 22px;
+    color: #7ED900;
+    margin-bottom: 10px;
+}
+
+#proyek .deskripsi p {
+    text-align: justify;
+    color: #CCCCCC;
+}
+
+#kontak h2 {
+    text-align: center;
+    color: #A4D703;
+}
+
+#kontak p {
+    color: #CCCCCC;
+    text-align: center;
+}
+
+#kontak form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#kontak label {
+    font-weight: bold;
+    color: #7ED900;
+}
+
+#kontak input,
+#kontak textarea {
+    padding: 10px;
+    background-color: #333;
+    color: #FFFFFF;
+    border: 1px solid #555;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+#kontak button {
+    padding: 12px;
+    background-color: #A4D703;
+    color: #1F1F1F;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#kontak button:hover {
+    background-color: #7ED900;
+}
+
+footer {
+    background-color: #000;
+    color: #7ED900;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    #proyek .proyek {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #proyek .proyek img {
+        width: 40%;
+    }
+
+    #proyek .deskripsi {
+        width: 60%;
+    }
+}
